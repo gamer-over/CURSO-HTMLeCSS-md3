@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="GET"> <!--POST:Envia as informações sem o usuário saber para onde vai
+                                                   GET:Envia e suas informações ficam ilustradas na URL   -->
+        <fieldset>
+            <legend>Informações pessoais</legend>
+        Nome:</br>
+        <input type="text" name="nome" required autofocus maxlength="7" placeholder="Seu nome" > </br> <!--
+                                                          1-required:Campo obrigatório
+                                                          2-autofocus:Já abre a página com foco em determinado input
+                                                          3-Disabled: desabilitar o campo, deixando travado
+                                                          4-maxlength:Número máximo de caracteres
+                                                        -->
+        Senha:</br>
+        <input type="password" name="senha" placeholder="sua senha"></br>
+        Email:</br>
+        <input type="email" name="email" required autocomplete="off" placeholder="seuemail@gmail.com"></br><!--autocomplete: Completa automaticamente = on/off-->
+                                                                          <!--placeholder: mostra uma mensagem na barra  -->
+
+        imagem:</br>
+        <input type="file" name="imagem"></br> <!--usamos o exemplo de imagem, porém pode ser qualquer arquivo-->
+        
+        <input type="hidden" name='id'></br> <!--input- invisivel-->
+                                  
+        <hr>
+
+
+         Escolha um curso:</br>
+
+         <input name="cursos" list="lista-curso">
+
+         <datalist id="lista-curso">
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="PHP"></option> 
+         </datalist> </br>
+         <hr>                                        
+
+
+
+
+
+        URL:</br>
+        <input type="url" name="url"></br>
+        <hr>
+
+        Search:</br>
+        <input type="search" name="pesquisa"></br>
+        <hr>                      
+        
+        Telefone:</br>
+        <input type="tel" name="telefone"></br>
+        <hr>
+
+        Data:</br>
+        <input type="date" name="data" min="2000-12-30" max="2021-12-31"></br>
+        <hr>
+
+        Hora:</br>
+        <input type="time" name="hora"></br>
+        <hr>
+        
+        Mês e ano:</br>
+        <input type="month" name="mes-ano"></br>
+        <hr>
+
+        Semana:</br>
+        <input type="week" name="semana"></br>
+        <hr>
+
+        Data e hora:</br>
+        <input type="datetime-local" name="data-hora"></br>
+        <hr>
+
+        Mensagem:</br>
+        <textarea name="mensagem" id="" cols="30" rows="10" spellcheck="true"></textarea> </br> <!--spellcheck =-"false/true: liga e desliga o detector de erros do texto-->
+    
+        <button type="button">Click</button> </br>
+
+        <hr>
+
+        Escolha seu veículo:</br>
+        <select name="veículo"></br>
+            <optgroup label="Carros">
+            <option value="camaro">Camaro</option>
+            <option value="hilux">Hilux</option>
+            </optgroup>
+
+            <optgroup label="Motos">
+            <option value="kawazaki" selected>Kawazaki</option>
+            <option value="lambreta">Lambreta</option>
+            </optgroup>
+        </select></br></br>
+
+
+
+
+
+
+        Time:</br> <!--type = radio/ escolha -->
+        <input type="radio" name="time" value="Flamengo">Flamengo</br>
+        <input type="radio" name="time" value="Vasco">Vasco</br>
+        <input type="radio" name="time" value="Palmeiras">Palmeiras</br>
+        <hr>
+        Cores:</br> <!--type = checkbox/ marcar--> <!--atributo checked/já deixa marcado algum por padrão-->
+        <input type="checkbox" name="cores" value="vermelho" checked>Vermelho</br>
+        <input type="checkbox" name="cores" value="azul">Azul</br>
+        <input type="checkbox" name="cores" value="verde">Verde</br>
+        <input type="checkbox" name="cores" value="amarelo">Amarelo</br>
+        <hr>
+        Quantidade:</br> <!--type = numer/ numero -->
+        <input type="number" name="quantidade" min="0" max="100" step="10"></br> <!-- min = minimo
+                                                                            max = máximo
+                                                                            step =  pula os números de acordo com oq você colocar-->
+
+            <hr>                                                                
+        <input type="range" name="quantidade"></br> <!--type = range/ apresenta uma barra com um marcador-->
+
+        <input type="color" name="cor"></br>
+        
+        <input type="submit" name="btn-enviar" value="Enviar"></br> 
+
+    </fieldset>
+    </form>
+</body>
+</html>

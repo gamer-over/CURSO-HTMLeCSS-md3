@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--
+1-formaction: manda as informações para uma determinada página
+2-formamethod: escolhe o metodo GET ou POST
+3-formenctype:
+4-formnovalidate:Não valida o input
+5-formtarget:Pode abrir página nova ou na mesma etc.
+6-
+
+
+
+
+
+
+
+
+
+-->
+<body>
+    <form id="form-cadastro" action="cadastro.php" method="POST" enctype="application/x-www-form-urlencoded" name="formulario-cadastro">
+        Email:</br>
+        <input type="email" name="email" required>
+        <input type="submit" name="cadastrar" formmethod="GET"formaction="cadastrar.php" value="Cadastrar">
+        <input type="submit" name="enviar-por-email"formmethod="POST" formaction="enviar-email.php"value="Enviar-por-email" formnovalidate>
+    </form>
+
+    Nome:</br>
+    <input type="text" name="nome" form="form-cadastro">
+</body>
+</html>
