@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        mark{
+            color: red;
+            background-color:blue;
+        }
+    </style>
 </head>
 
 <!--
@@ -34,5 +41,27 @@
 
     Nome:</br>
     <input type="text" name="nome" form="form-cadastro">
+
+    <div contenteditable>
+    <p>Lorem <mark>ipsum, dolor sit amet consectetur adipisicing elit.</mark> Rerum deleniti reprehenderit dolorem repellendus voluptatum eveniet, deserunt quo doloribus. Molestias excepturi voluptatem vero. Vero fugit et tempora deserunt id laborum quidem!</p>
+    </div>
+    <!--tag mark: marca algo no texto,dando a possibilidad de mudar o trecho de cor etc.
+        contenteditable:permite que o texto seja editavel, podendo apagar,escrever etc.
+    -->
+    <a href="#" tabindex="3" accesskey="g">Google</a></br> <!--tabindex:organiza qual elemento será selecionado pelo tab-->
+    <a href="#" tabindex="2" accesskey="y">Youtube</a></br> <!--accesskey: tecla que irá acessar o link-->
+    <a href="#" tabindex="1" accesskey="m">Gmail</a> </br>
+
+    <details>
+       <summary>
+           Curso HTML5
+       </summary>
+       <ul>
+           <li>01-introdução</li>
+           <li>02-tags</li>
+           <li>03-exemplos práticos</li>
+       </ul>
+    </details>
+
 </body>
 </html>
